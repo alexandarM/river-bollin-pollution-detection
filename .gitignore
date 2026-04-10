@@ -1,0 +1,42 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints*
+
+# Model files (large binary files)
+*.pt
+*.pth
+*.h5
+*.keras
+
+# Data files
+*.zip
+*.jpg
+*.png
+dataset/
+imgs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+monitor_log.csv
+alerts.log
+EOF
